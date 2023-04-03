@@ -18,9 +18,18 @@ body {
     max-height: 100%;
 }
 
+body  .fa-xl{
+    display: none;
+
+}
+
 h1 {
     font-size: 26px;
     font-weight: 600;
+}
+
+body .celular__titulo {
+    display: none;
 }
 
 /* header */
@@ -356,12 +365,6 @@ a {
     width: 50%;
 }
 
-.texto2 h3 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
 
 /* final de agregar negocio */
 /* inicio de asociar negocio */
@@ -390,29 +393,12 @@ a {
     margin: 2px 5px 0;
     height: 50px;
 }
-.boton {
-    margin-top: 10px;
-    padding: 10px;
-    position: relative;
-    left: 440px;
-    margin-bottom: 10px;
-}
 
-.h3asociar {
-    font-size: 20px;
-    text-align: center;
-}
-.cuerpolateral__asociar .h3asociar {
-    text-align: center;
-    margin-right: 50px ;
-    
-}
 .cuerpolateral__asociar {
     padding: 2px 5px 0;
     width: 100%;
-    margin-top: 30px;
-    
-    text-align: center;
+    margin: 10px ;
+    text-align: justify;
 }
 
 /* final de asociar negocio */
@@ -435,16 +421,10 @@ a {
     display: flex;
     flex-wrap: wrap;
 }
-.mini__subtitulo .opciones__catalogo {
-    height: 30px;
-}
 
-.opciones__catalogo {
-    width: auto;
-}
 .mini__subtitulo {
     margin: 5px;
-    height: 50px;
+    height: 70px;
     width: 100%;
     display: flex;
     background-color: cadetblue;
@@ -474,15 +454,6 @@ a {
     width: 210px;
 }
 
-.mini__subtitulo .catalogo__articulos{
-    margin-top: 20px;
-}
-
-.catalogo__articulos {
-    height: 30px;
-    color: #fff;
-    background-color: #69D546;
-}
 /* final de catalogo */
 /* inicio de terminos y politica*/
 
@@ -530,22 +501,8 @@ a {
     display: flex;
 } */
 
-.footer {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
 .cuerpotexto h3 {
     padding-bottom: 10px;
-}
-.footer img {
-    width: 35px;
-    height: 35px;
-    background-color: #5F5D5D;
-}
-.footer p {
-    font-size: 20px;
 }
 
 /* final de terminos y politica */
@@ -599,17 +556,6 @@ a {
 
 .texto__eliminar h3{
     padding-bottom: 9px;
-}
-
-.atencion {
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.boton__eliminar {
-    background-color: #ff0000;
-    color: #fff;
-    margin-top: 30px;
 }
 
 /* final de eliminar cuenta */
@@ -775,12 +721,9 @@ a {
     }
 
     .mini__subtitulo{
-        height: 30px;
+        height: 50px;
     }
 
-    .mini__subtitulo .catalogo__articulos{
-        margin-top: 0;
-    }
     .catalogo1{
         width: 190px;
     }
@@ -827,14 +770,33 @@ a {
         display: none;
     }
 
+    .salir__titulo {
+        margin: auto 0;
+        display: flex;
+        width: 300px;
+        justify-content: space-around;
+    }
+
+    body .celular__titulo{
+        font-size: 22px;
+        color: #fff;
+        display: flex;
+        margin-left: 30px;
+        align-items: center;
+    }
+    body .fa-xl {
+        display: flex;
+        margin-top: 25px;
+    }
+
     .configuracion__inicio{
         width: 100%;
-        margin-top: 50px;
-        height: calc(100vh - 50px);
+        margin-top: 0px;
+        height: calc(100vh - 0px);
     }
 
     .configuracion__inicio h3{
-        margin-top: 10px;
+        margin-bottom: 10px;
         font-size: 28px;
         text-align: center;
     }
@@ -878,8 +840,8 @@ a {
 
     .contenedor__lateral {
         width: 100%;
-        height: calc(100vh - 50px);
-        margin-top: 50px;
+        height: calc(100vh - 20px);
+        margin-top: 20px;
         display: flex;
     }
 
@@ -898,8 +860,8 @@ a {
 
     .contenedor__lateral1 {
         width: 100%;
-        height: calc(100vh - 50px);
-        margin-top: 60px;
+        height: calc(100vh - 20px);
+        margin-top: 20px;
     }
 
     .fa-solid3 {
@@ -917,8 +879,8 @@ a {
 
     .contenedor__lateral2{
         width: 100%;
-        height: calc(100vh - 50px);
-        margin-top: 60px;
+        height: calc(100vh - 20px);
+        margin-top: 20px;
     }
 
     .fa-solid {
@@ -935,8 +897,8 @@ a {
     /* inicio de catalogo*/
     .contenedor__lateral3{
         width: 100%;
-        margin-top: 50px;
-        height: calc(100vh - 50px);
+        margin-top: 20px;
+        height: calc(100vh - 20px);
         
     }
 
@@ -945,10 +907,6 @@ a {
         height: 100%;
     }
 
-    .catalogo img {
-        width: 90%;
-        text-align: center;
-    }
     .catalogo1 {
         height: 120px;
         width: 100px;
@@ -972,9 +930,9 @@ a {
     /*  inicio de terminos y politicas*/
 
     .contenedor__lateral4 {
-        margin-top: 50px;
+        margin-top: 20px;
         width: 100%;
-        height: calc(100vh - 50px);
+        height: calc(100vh - 20px);
     }
 
     .fa-solid {
@@ -992,8 +950,8 @@ a {
 
     .contenedor__lateral5{
         width: 100%;
-        height: calc(100vh - 50px);
-        margin-top: 50px;
+        height: calc(100vh - 20px);
+        margin-top: 20px;
     }
 
     .fa-solid {
