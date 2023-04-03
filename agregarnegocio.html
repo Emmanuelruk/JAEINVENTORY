@@ -18,19 +18,19 @@
     </header>
     <nav class="menu">
         <div class="menu__contenido">
-            <img src="img/logo/hogar 1.svg" alt="inicio" class="menu__inicio">
+            <img src="img/logo/hogar1.svg" alt="inicio" class="menu__inicio">
             <a class="lista" href="#">inicio</a>
         </div>
-        <div class="menu__contenido"> <img src="img/logo/scale 1.svg" alt="balance" class="menu__balance">
+        <div class="menu__contenido"> <img src="img/logo/scale1.svg" alt="balance" class="menu__balance">
             <a class="lista" href="">Balance</a>
         </div>
-        <div class="menu__contenido"><img src="img/logo/pedir-prestado 1.svg" alt="deudas" class="menu__deudas">
+        <div class="menu__contenido"><img src="img/logo/pedir-prestado1.svg" alt="deudas" class="menu__deudas">
             <a class="lista" href="">deudas</a>
         </div>
         <div class="menu__contenido"> <img src="img/logo/camion1.svg" alt="pedidos" class="menu__pedidos">
             <a class="lista" href="">pedidos</a>
         </div>
-        <div class="menu__contenido"><img src="img/logo/inventario-disponible 1.svg" alt="inventario"
+        <div class="menu__contenido"><img src="img/logo/inventario-disponible1.svg" alt="inventario"
                 class="menu__inventario">
             <a class="lista" href="">inventario</a>
         </div>
@@ -40,9 +40,6 @@
     <div class="main">
         <article class="configuracion">
             <h3>Configuración</h3>
-            <div class="celular">
-                <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
-            </div>
             <div class="configuracion__ajuste">
                 <a class="configuracion__contenido " href="index.html">
                     <div class="configuracion__enlace ">cuenta perfil</div>
@@ -60,14 +57,6 @@
                     <div class="configuracion__enlace">configurar catalogo virtual</div>
                 </a>
             
-                <a class=" configuracion__contenido" href="">
-                    <div class="configuracion__enlace">únete a la comunidad de Facebook</div>
-                </a>
-            
-                <a class="configuracion__contenido" href="">
-                    <div class="configuracion__enlace">únete a la comunidad de Instagram </div>
-                </a>
-            
                 <a class="configuracion__contenido" href="">
                     <div class="configuracion__enlace">Compartir</div>
                 </a>
@@ -83,36 +72,75 @@
                 <a class="configuracion__contenido cerrar" href="">
                     <div class="cerrar">Cerrar sesión</div>
                 </a>
+                
+                <div class="compartir__app">
+                    <a class=" configuracion__compartir" href="https://es-la.facebook.com/" target="_blank">
+                    <div class="configuracion__enlace--compartir"> <img src="img/logo/icono-fb.png" alt="conpartir"> </div>
+                    </a>
+            
+                    <a class="configuracion__compartir" href="https://www.instagram.com/" target="_blank">
+                    <div class="configuracion__enlace--compartir"> <img src="img/logo/icono-ingr.png" alt="conpartir"> </div>
+                    </a>
+                </div>
+                
             </div>
         </article>
 
-        <div class="contenedor__lateral1">
-            <div class="input__agregar">
-                <div class="input--agregar">
-                    <input class="input2" type="text">
-                </div>
-                <div class="input--agregar">
-                    <input class="input2" type="text">
-                </div>
-                <div class="input--agregar">
-                    <input class="input2" type="text">
-                </div>
-                <div class="input--agregar">
-                    <input class="input2" type="text">
-                </div>
-                <div class="input--agregar">
-                    <input class="input2" type="text">
-                </div>
-                <div class="input--agregar">
-                    <input class="input2" type="text">
-                </div>
+        <div  class="contenedor__lateral1">
+            <div class="celular3">
+                <a href="entradamenu.html"><i class="fa-solid3 fa-arrow-left3"></i></a>
             </div>
+            <form action="agregarnegocio.html"  class="input__agregar">
+                <div class="input--agregar">
+                    <input class="input2" type="text" id="nombreNegocio" placeholder="Nombre">
+                </div>
+                <div class="input--agregar">
+                    <input class="input2" type="text" id="telefonoNegocio" placeholder="Telefono">
+                </div>
+                <div class="input--agregar">
+                    <input class="input2" type="text" id="direccionNegocio" placeholder="direccion">
+                </div>
+                <div class="input--agregar" >
+                    <input class="input2" type="text" id="empresaNegocio" placeholder="Empresa">
+                </div>
+                <div class="input--agregar">
+                    <input class="input2" type="text" id="correoNegocio" placeholder="Correo">
+                </div>
+
+                <div class="input--agregar">
+                    <input class="input2" type="button" value="guardar" onclick="guardarNegocio()">
+                </div>
+            </form>
             <div class="texto2">
-                <h3>Lorem ipsum dolor sit.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, aut fugit! Eum perferendis adipisci impedit illum vitae. Id esse consequatur ut ipsa quaerat corrupti commodi in! Explicabo ipsa tempora earum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum unde placeat quas modi nulla tempora fuga illum omnis neque rerum totam, alias vero error quam ab, architecto aut deleniti laborum.</p>
+                <h3>Si aqui podras agregar otro negocio</h3>
+
+                <p>Ingresa los para poder validar un nuevo negocio</p>
+                
+                <p>Puedes hacer esto cuantas veces quieras</p>
             </div>
         </div>
     </div>
+
+    <script>
+        function guardarNegocio() {
+            var datos2 = [];
+
+            var nombre = document.getElementById('nombreNegocio');
+            var Direccion = document.getElementById('direccionNegocio');
+            var telefono = document.getElementById('telefonoNegocio');
+            var empresa = document.getElementById('empresaNegocio')
+            var correo = document.getElementById('correoNegocio');
+
+            if(nombre.value,Direccion.value,telefono.value,empresa.value,correo.value == datos2) {
+                alert("no has hecho nungun cambio")
+
+            } else {
+            alert("quiere guardar cambios?")
+                datos2 = datos2.push();
+            }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/d892dac499.js" crossorigin="anonymous"></script>
 </body>
 </html>
 
